@@ -1,0 +1,12 @@
+@use 'colors' as *;
+
+html[data-theme="light"] {
+  --background-color: #{$white};
+  --sidebar-background-color: #{$primary};
+  --sidebar-text-color: #{$grey};
+  --sidebar-text-active-color: #{$white};
+  --black: #{$black};
+  --white: #{$white};
+  --primary-color: #{$primary};
+  --secondary-color: #{$grey};
+}

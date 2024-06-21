@@ -1,0 +1,38 @@
+@use 'theme/theme' as *;
+
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .cocktail {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    &__img-wrapper {
+      border-radius: 10%;
+      overflow: hidden;
+      margin: 0.66em auto;
+      width: 70%;
+    }
+  }
+}
